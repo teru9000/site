@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+p {
+    font-family: 'Noto Serif JP', serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Noto Serif JP', serif;
+}
+
+/*
+-------------------------------------------------------------
+フォント変更コード
+font-family: 'IBM Plex Sans JP', sans-serif;太いゴシック体、キャッチコピー用
+font-family: 'BIZ UDPGothic', sans-serif;ゴシック体
+font-family: 'Noto Serif JP', serif;　　　font-weight　Regular　Bold　明朝、テキスト、細かいタイトルに使用
+font-family: 'Zen Old Mincho', serif;　大きいタイトルに使用
+-------------------------------------------------------------
+*/
+
+/*
+---------------------------------------
+ボディー
+---------------------------------------
+*/
+body {
+    display: flex;
+    flex-flow: column;
+    row-gap: 192px;
+    background-color: black;
+}
+
+/*
+---------------------------------------
+ヘッダー
+---------------------------------------
+*/
+.header__main {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    /*横並び*/
+    align-items: center;
+    /*中身上下中央ぞろえ*/
+}
+
+.header__logo {
+    padding-left: 2%;
+    font-size: 32px;
+    font-family: 'BIZ UDPGothic', sans-serif;
+
+}
+
+.header__mainMenu {
+    padding-right: 2%;
+    display: flex;
+    /*横並び*/
+    column-gap: 16px;
+    align-items: center;
+    /*上下中央ぞろえ*/
+    margin: 0 0 0 auto;
+    /*右寄せ*/
+}
+
+.header__mainMenu__text {
+    font-size: 16px;
+}
+
+.header__img {
+    width: 100%;
+}
+
+.mainVisual {
+    position: relative;
+}
+
+.catchcopy {
+    -webkit-text-stroke: 2px black;
+    font-size: 64px;
+    font-family: 'IBM Plex Sans JP', sans-serif;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*
+---------------------------------------
+メイン
+---------------------------------------
+*/
+main {
+    row-gap: 64px;
+}
+
+/*
+---------------------------------------
+コンテンツ
+---------------------------------------
+*/
+.contents {
+    text-align: center;
+}
+.contents__box{
+    margin: 0 auto;
+    width: 928px;
+}
+
+
+.contents__box__main {
+    background-color: white;
+    padding: 64px;
+    border-radius: 30px;
+}
+
+.contents__title {
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 48px;
+    text-align: center
+}
+
+.contents__title__text {
+    display: flex;
+    flex-flow: column;
+    row-gap: 16px;
+}
+
+.contents__subtitle {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.contents__border {
+    margin: 0 auto;
+    width: 800px;
+    border-top: solid lightgray;
+}
+
+/*
+---------------------------------------
+今月のおすすめ
+---------------------------------------
+*/
+.recommended__main {
+    display: flex;
+    padding-left: 32px;
+    align-items: center;
+}
+
+.recommended__main__margin {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.recommended__mein__textBox {
+    display: flex;
+    flex-flow: column;
+    row-gap: 16px;
+    text-align: left;
+    padding-left: 64px;
+}
+
+.recommended__mein__textTitle {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 8px;
+    border-left: 3px solid red;
+}
+
+.recommended__mein__text {
+    font-size: 16px;
+    padding-left: 8px;
+}
+
+/*
+---------------------------------------
+メニュー
+---------------------------------------
+*/
+.menu__flex {
+    display: flex;
+    justify-content: center;
+    column-gap: 32px;
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+
+/*
+---------------------------------------
+ギャラリー
+---------------------------------------
+*/
+.gallery__box {
+    background-color: white;
+    width: 100%;
+}
+
+.gallery__main {
+    padding: 64px 0 64px 0;
+
+}
+
+.gallery__image {
+    width: 100%;
+    padding-top: 16px;
+
+}
+
+/*
+---------------------------------------
+シェフ
+---------------------------------------
+*/
+.chef__box {
+    display: inline-block;
+    width: 1120px;
+}
+
+.chef__flex {
+    padding: 16px;
+    display: flex;
+    column-gap: 80px;
+    align-items: center;
+}
+
+.chef__name {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: bold;
+    font-size: 32px;
+    padding-left: 8px;
+    border-left: solid 3px red;
+}
+
+.chef__textBox {
+    text-align: left;
+}
+
+.chef__text {
+    padding-top: 72px;
+}
+
+.chef__img {
+    width: 480px;
+}
+
+
+footer {
+    background-color: gray;
+    height: 80px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}

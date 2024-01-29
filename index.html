@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>レストラン髙橋</title>
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- google__fonts フォント導入 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@700&family=IBM+Plex+Sans+JP:wght@700&family=Noto+Serif+JP:wght@400;700&family=Zen+Old+Mincho:wght@900&display=swap"
+        rel="stylesheet">
+    <!--bxslider-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function () {
+            $('.mainVisual__slider').bxSlider({
+                auto: true,
+                mode: 'fade',
+                speed: 1000,
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header__main">
+            <p class="header__logo">レストラン髙橋</p>
+            <div class="header__mainMenu">
+                <a href="#recommended" class="header__mainMenu__text">今月のおすすめ</a>
+                <a href="#menu" class="header__mainMenu__text">メニュー</a>
+                <a href="#gallery" class="header__mainMenu__text">ギャラリー</a>
+                <a href="#chef" class="header__mainMenu__text">シェフ</a>
+            </div>
+        </div>
+        <div class="mainVisual">
+            <div class="mainVisual__slider">
+                <div>
+                    <img class="header__img" src="img/メインビジュアル.png">
+                </div>
+                <div>
+                    <img class="header__img" src="img/メインビジュアル２.png">
+                </div>
+                <div>
+                    <img class="header__img" src="img/メインビジュアル３.png">
+                </div>
+            </div>
+            <div>
+                <p class="catchcopy">レストラン髙橋</p>
+            </div>
+        </div>
+    </header>
+    <!--今月のおすすめ-->
+    <div class="slide-top" data-plugin-options='{"reverse": false, "speed":1000}'>
+        <div class="contents" id="recommended">
+            <div class="contents__box">
+                <!--題名-->
+                <div class="contents__box__main">
+                    <div class="contents__mainBox">
+                        <div class="contents__title__text">
+                            <p class="contents__title">RECOMMENDED</p>
+                            <p class="contents__subtitle">今月のおすすめ</p>
+                        </div>
+                        <div class="contents__border"></div>
+                        <!--パスタ-->
+                        <div class="recommended__main__margin">
+                            <div class="recommended__main">
+                                <img src="img/パスタ　画像.png">
+                                <div class="recommended__mein__textBox">
+                                    <p class="recommended__mein__textTitle">野菜たっぷりパスタ</p>
+                                    <p class="recommended__mein__text">￥４,５００</p>
+                                    <p class="recommended__mein__text">旬の野菜をふんだんに使いました<br>
+                                        当店の新作です</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contents__border"></div>
+                        <!--刺身-->
+                        <div class="recommended__main__margin">
+                            <div class="recommended__main">
+                                <img src="img/刺身　画像.png">
+                                <div class="recommended__mein__textBox">
+                                    <p class="recommended__mein__textTitle">刺身盛り合わせ</p>
+                                    <p class="recommended__mein__text">￥２５,０００</p>
+                                    <p class="recommended__mein__text">高知の新鮮な刺身を盛り合わせました</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contents__border"></div>
+                        <!--カレー-->
+                        <div class="recommended__main__margin">
+                            <div class="recommended__main">
+                                <img src="img/カレー　画像.png">
+                                <div class="recommended__mein__textBox">
+                                    <p class="recommended__mein__textTitle">インド風カレー</p>
+                                    <p class="recommended__mein__text">￥４,５００</p>
+                                    <p class="recommended__mein__text">スパイスをこだわりぬいた料理です<br>
+                                        声をかけて下さればナンをライスに変更も可能です</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contents__border"></div>
+                        <!--ステーキ-->
+                        <div class="recommended__main__margin">
+                            <div class="recommended__main">
+                                <img src="img/ステーキ　画像.png">
+                                <div class="recommended__mein__textBox">
+                                    <p class="recommended__mein__textTitle">ステーキ各種盛り合わせ</p>
+                                    <p class="recommended__mein__text">￥７,０００</p>
+                                    <p class="recommended__mein__text">フライドポテトとサラダのセットとなっております<br>
+                                        オリジナルソースをかけてお召し上がりください</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contents__border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--メニュー-->
+    <div class="slide-top" data-plugin-options='{"reverse": false, "speed":1000}'>
+        <div class="contents" id="menu">
+            <div class="contents__box">
+                <div class="contents__box__main">
+                    <div class="contents__mainBox">
+                        <div class="contents__title__text">
+                            <p class="contents__title">MENU</p>
+                            <p class="contents__subtitle">メニュー</p>
+                        </div>
+                        <div class="contents__border"></div>
+                        <!--flexで横並びにする-->
+                        <div class="menu__flex">
+                            <div class="contents__main">
+                                <img src="img/メイン　画像.png">
+                                <div>
+                                    <p class="menu__mainText">メイン</p>
+                                </div>
+                            </div>
+                            <div class="contents__main">
+                                <img src="img/コース　画像.png">
+                                <div>
+                                    <p class="menu__mainText">コース</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contents__border"></div>
+                        <!--flexで横並びにする-->
+                        <div class="menu__flex">
+                            <div class="contents__main">
+                                <img src="img/デザート　画像.png">
+                                <div">
+                                    <p class="menu__mainText">デザート</p>
+                            </div>
+                            <div class="contents__main">
+                                <img src="img/ドリンク　画像.png">
+                                <div>
+                                    <p class="menu__mainText">ドリンク</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contents__border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--ギャラリー-->
+    <div class="slide-top" data-plugin-options='{"reverse": false, "speed":1000}'>
+        <div class="contents" id="gallery">
+            <!--題名-->
+            <div class="gallery__box">
+                <div class="gallery__main">
+                    <div class="contents__title__text">
+                        <p class="contents__title">GALLERY</p>
+                        <p class="contents__subtitle">ギャラリー</p>
+                    </div>
+                    <div class="contents__border"></div>
+                    <div class="gallery__slider">
+                        <div><img class="gallery__image" src="img/画像１.png"></div>
+                        <div><img class="gallery__image" src="img/画像２.png"></div>
+                        <div><img class="gallery__image" src="img/画像３.png"></div>
+                        <div><img class="gallery__image" src="img/画像４.png"></div>
+                        <div><img class="gallery__image" src="img/画像５.png"></div>
+                        <div><img class="gallery__image" src="img/画像６.png"></div>
+                        <div><img class="gallery__image" src="img/画像７.png"></div>
+                        <div><img class="gallery__image" src="img/画像８.png"></div>
+                        <div><img class="gallery__image" src="img/画像９.png"></div>
+                        <div><img class="gallery__image" src="img/画像１０.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--シェフ紹介-->
+    <div class="slide-top" data-plugin-options='{"reverse": false, "speed":1000}'>
+        <div class="contents" id="chef">
+            <div class="chef__box">
+                <!--題名-->
+                <div class="contents__box__main">
+                    <div class="contents__mainBox">
+                        <div class="contents__title__text">
+                            <p class="contents__title">CHEF</p>
+                            <p class="contents__subtitle">シェフ紹介</p>
+                        </div>
+                        <div class="contents__border"></div>
+                        <!--flexで横並びにする-->
+                        <div class="chef__flex">
+                            <img class="chef__img" src="img/シェフ　画像.png">
+                            <div class="chef__textBox">
+                                <p class="chef__name">デイビッド髙橋</p>
+                                <p class="chef__text">32歳、イタリアで10年修行し、2022に日本へ帰国、<br>
+                                    高知でレストラン髙橋を開店する</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--フッター-->
+    <footer>
+        <p>@ 2022 manabiya-sakura</p>
+    </footer>
+    <!--jquery cds読み込み-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!--fadethisファイル読み込み-->
+    <script src="js/jquery.fadethis.min.js" type="text/javascript"></script>
+    <!--slickファイル読み込み-->
+    <script src="js/slick.min.js"></script>
+    <script>
+        $(function () {
+            /*slick code*/
+            $('.gallery__slider').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                centermode: true,
+                autoplay: true,
+                arrows: false,
+                swipe: false,
+                cssEase: 'linear',
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                autoplaySpeed: 3000,
+                speed: 1000,
+            });
+            $(window).fadeThis();
+        });
+    </script>
+</body>
+
+</html>
